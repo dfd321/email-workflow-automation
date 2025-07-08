@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  email_processing_agent:
+    build: ./email_processing_agent
+    env_file:
+      - ./email_processing_agent/.env
+    volumes:
+      - ./email_processing_agent:/app
+
+  email_classification_agent:
+    build: ./email_classification_agent
+    ports:
+      - "8001:8001"
+    env_file:
+      - ./email_classification_agent/.env
+    volumes:
+      - ./email_classification_agent:/app
+
+  workflow_router_agent:
+    build: ./workflow_router_agent
+    ports:
+      - "8002:8002"
+    env_file:
+      - ./workflow_router_agent/.env
+    volumes:
+      - ./workflow_router_agent:/app
+
+  invoice_handler_agent:
+    build: ./invoice_handler_agent
+    ports:
+      - "8003:8003"
+    env_file:
+      - ./invoice_handler_agent/.env
+    volumes:
+      - ./invoice_handler_agent:/app
+
+  scheduler_agent:
+    build: ./scheduler_agent
+    ports:
+      - "8004:8004"
+    env_file:
+      - ./scheduler_agent/.env
+    volumes:
+      - ./scheduler_agent:/app
+
+  info_retrieval_agent:
+    build: ./info_retrieval_agent
+    ports:
+      - "8005:8005"
+    env_file:
+      - ./info_retrieval_agent/.env
+    volumes:
+      - ./info_retrieval_agent:/app

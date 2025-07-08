@@ -1,0 +1,6 @@
+# requirements.txt for scheduler_agent
+fastapi
+uvicorn
+python-dotenv
+pydantic
+# Add other necessary libraries like google-api-python-client

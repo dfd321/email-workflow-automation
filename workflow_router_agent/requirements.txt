@@ -1,0 +1,6 @@
+# requirements.txt for workflow_router_agent
+fastapi
+uvicorn
+httpx
+python-dotenv
+pydantic

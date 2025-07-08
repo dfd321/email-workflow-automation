@@ -1,0 +1,6 @@
+# requirements.txt for info_retrieval_agent
+fastapi
+uvicorn
+python-dotenv
+pydantic
+# Add other necessary libraries like pinecone-client

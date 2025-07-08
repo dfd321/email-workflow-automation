@@ -1,0 +1,6 @@
+# requirements.txt for invoice_handler_agent
+fastapi
+uvicorn
+python-dotenv
+pydantic
+# Add other necessary libraries like boto3 for S3, jinja2 for templates

@@ -1,0 +1,6 @@
+# requirements.txt for email_processing_agent
+imaplib2
+msal
+requests
+python-dotenv
+beautifulsoup4

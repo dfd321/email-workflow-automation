@@ -1,0 +1,9 @@
+# requirements.txt for email_classification_agent
+fastapi
+uvicorn[standard]
+langchain
+langchain-openai
+openai
+python-dotenv
+pydantic
+httpx
